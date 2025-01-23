@@ -1,0 +1,146 @@
+:root {
+    --orange: #F28F15;
+    --light-gray: #F8F8F8;
+    --gray: #666666;
+    --dark-gray: #333333;
+    --font-gray: #999999;
+    --blue: #393185;
+}
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+/* Первый раздел*/
+
+.first-section {
+    background-color: var(--light-gray);
+    padding: 80px 0;
+}
+.breadcrumb {
+    font-size: 13px;
+    color: var(--font-gray);
+}
+.first-section-header {
+    color: var(--orange);
+    font-size: 40px;
+}
+.first-section-header span {
+    color: var(--blue);
+}
+.btn-all-projects {
+    width: 148px;
+    height: 38px;
+    color: var(--blue);
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+}
+.btn-all-projects::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 8px;
+    background-image: url(../img/first-section/btn_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+}
+.first-section-text {
+    max-width: 900px;
+    color: var(--gray);
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.first-news {
+    position: relative;
+}
+.first-news-text {
+    position: absolute;
+    bottom: 45px;
+    left: 43px;
+}
+.first-news img {
+    border-radius: 32px;
+    height: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    width: 100%;
+    max-width: 778px;
+}
+.first-news-text a, .news-text a {
+    text-decoration: none;
+    font-size: 15px;
+}
+.news-item {
+    border-radius: 32px;
+}
+.news-item img {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+.news-text a, .news-text .date {
+    color: var(--dark-gray);
+    margin: 20px;
+}
+.news-text {
+    gap: 20px;
+}
+.news-text .date {
+    padding-bottom: 20px;
+}
+
+/* Второй раздел*/
+
+.second-section {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.item-form {
+    background-color: var(--blue);
+    margin-top: 48px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+.form-contacts {
+    font-size: 13px;
+}
+.form-header {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+input {
+    border-radius: 12px;
+    border: 2px solid white;
+}
+textarea, button {
+    border-radius: 12px;
+    border: none;
+}
+.agreement {
+    font-size: 13px;
+    border: 2px solid var(--blue);
+}
+input[type="checkbox"] { 
+    width: 21px;
+    height: 21px;
+}
+.form-btn {
+    color: var(--blue);
+    padding: 15px 30px;
+}
+.form-btn:hover {
+    background-color: var(--font-gray);
+    color: white;
+}
+.img-man {
+    object-fit: cover;
+    height: 100%;
+}
+#error-username, #error-number, #error-email {
+    color: red;
+    font-size: 15px;
+    height: 10px;
+}
